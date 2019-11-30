@@ -100,7 +100,23 @@
 			try {
 				$stmt = $this->conn->prepare("DELETE FROM `usuarios` WHERE cpf = :cpf");
 
-				$stmt->bindParam("")
+				$stmt->bindParam(":cpf",$this->cpf);
+				$stmt->execute();
+				return 1;
+			} catch (PDOException $e) {
+				echo $e->getMessage();
+				return 0;
+			}
+		}
+
+		public function ViewAll() {
+			try {
+				$stmt = $this->conn->prepare("SELECT * FROM usuarios");
+				$stmt->execute();
+				return $stmt;
+			} catch (PDOException $e) {
+				echo $e->getMessage();
+				return 0;
 			}
 		}
 
