@@ -1,0 +1,255 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Tempo de geração: 01-Dez-2019 às 21:44
+-- Versão do servidor: 10.4.8-MariaDB
+-- versão do PHP: 7.1.33
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Banco de dados: `escola`
+--
+CREATE DATABASE ESCOLA;
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `aluno`
+--
+
+CREATE TABLE `aluno` (
+  `matricula` int(11) NOT NULL,
+  `turma` int(11) DEFAULT NULL,
+  `id_aluno` varchar(14) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `aluno`
+--
+
+INSERT INTO `aluno` (`matricula`, `turma`, `id_aluno`) VALUES
+(192383, 1, '123-456-789.10'),
+(192727, 1, '123.353.141-00'),
+(192737, 1, '123.353.143-00'),
+(193837, 1, '202.318.123.08'),
+(197337, 1, '145.336.363-73'),
+(1924554, 2, '245.353.635-31'),
+(19235646, 2, '262.388.123.08'),
+(19236336, 2, '245.353.535-31'),
+(19243535, 2, '242.437.474-69'),
+(192545464, 2, '334.373.737-90');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `assiste`
+--
+
+CREATE TABLE `assiste` (
+  `notaP1` double NOT NULL,
+  `notaP2` double NOT NULL,
+  `notaTrabalho` double NOT NULL,
+  `Faltas` int(11) NOT NULL,
+  `matricula_aluno` int(11) NOT NULL,
+  `cod_disc` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `coordenador`
+--
+
+CREATE TABLE `coordenador` (
+  `codigo` int(11) NOT NULL,
+  `id_coordenador` varchar(14) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `coordenador`
+--
+
+INSERT INTO `coordenador` (`codigo`, `id_coordenador`) VALUES
+(1, '338.282.806-36');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `disciplina`
+--
+
+CREATE TABLE `disciplina` (
+  `codigo_disc` int(11) NOT NULL,
+  `nome_disc` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `disciplina`
+--
+
+INSERT INTO `disciplina` (`codigo_disc`, `nome_disc`) VALUES
+(1, 'Português'),
+(2, 'Matemática'),
+(3, 'Geografia'),
+(4, 'História'),
+(5, 'Geografia');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `professor`
+--
+
+CREATE TABLE `professor` (
+  `cat` int(11) NOT NULL,
+  `disciplina_lecionada` int(11) DEFAULT NULL,
+  `turma_lecionada` int(11) DEFAULT NULL,
+  `id_professor` varchar(14) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `professor`
+--
+
+INSERT INTO `professor` (`cat`, `disciplina_lecionada`, `turma_lecionada`, `id_professor`) VALUES
+(24345, 2, 2, '343.535.353-51'),
+(124244, 1, 1, '338.282.836-36'),
+(353663, 3, 2, '343.535.853-51'),
+(363565, 5, 2, '525.622.363-53'),
+(36365637, 4, 1, '345.336.363-73');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `cpf` varchar(14) NOT NULL,
+  `nome` varchar(100) NOT NULL,
+  `rg` varchar(14) NOT NULL,
+  `endereco` varchar(100) NOT NULL,
+  `senha` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `usuario`
+--
+
+INSERT INTO `usuario` (`cpf`, `nome`, `rg`, `endereco`, `senha`) VALUES
+('123-456-789.10', 'Nicolas Cage', '3244355', 'Rua Dois', '12345'),
+('123.353.141-00', 'Tom Cruise', '2424535', 'Rua da Esperança', '35367999'),
+('123.353.143-00', 'Tom Cruise', '2424535', 'Rua da Esperança', '35367999'),
+('145.336.363-73', 'Sylvester Stallone', '434546464', 'Rua Vinte e Um', '34425252'),
+('202.318.123.08', 'Cameron Diaz', '355353', 'Rua Governador', 'dxaxmx'),
+('242.437.474-69', 'Tom Hanks', '353636', 'Rua Santo Drummond', '53535'),
+('245.353.535-31', 'Julia Roberts', '142424', 'Rua Sao Jorge', '343453'),
+('245.353.635-31', 'Julia Roberts', '142424', 'Rua Sao Jorge', '323453'),
+('262.388.123.08', 'Cameron Diaz', '355353', 'Rua Governador', 'dxaxmx'),
+('334.373.737-90', 'Robert de Niro', '442536', 'Rua Sete de Setembro', 'azul'),
+('338.282.806-36', 'Adam Sandler', '343535', 'Rua Castro Alves', 'bonecaxxx'),
+('338.282.836-36', 'Adam Sandler', '343535', 'Rua Castro Alves', 'bonecaxxx'),
+('343.535.353-51', 'Al Pacino', '5354646', 'Rua Da Paz', '53535paz'),
+('343.535.853-51', 'Al Pacino', '5354646', 'Rua Da Paz', '53535paz'),
+('345.336.363-73', 'Sylvester Stallone', '434546464', 'Rua Vinte e Um', '34425252'),
+('351.383.389-39', 'Antonio Banderas', '35536363', 'Rua Espirito Santo', '36353535'),
+('353.029.912-15', 'John Wayne', '345454', 'Rua Amazonas', '3635367'),
+('353.537.938-98', 'Jet Li', '363535', 'Rua Vinte e Quatro', 'trigo'),
+('353.538.383-83', 'Angelina Jolie', '353553', 'Rua José Bonifácio', 'chocolate'),
+('353.929.912-15', 'John Wayne', '345454', 'Rua Amazonas', '3635367'),
+('445.739.039-39', 'Meryl Streep', '252524', 'Rua 6', 'luiz'),
+('453.633.838-38', 'Samuel L Jackson', '3353793', 'Rua Goias', 'agua'),
+('525.622.363-53', 'Denzel Washington', '33536363', 'Rua Duque De Caxias', '2000rer'),
+('535.393.873-01', 'Nicole Kidman', '333663', 'Rua Santa Maria', 'hoje'),
+('553.738.383-53', 'Sandra Bullock', '43363', 'Rua Sao Pedro', 'deadpool');
+
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices para tabela `aluno`
+--
+ALTER TABLE `aluno`
+  ADD PRIMARY KEY (`matricula`),
+  ADD KEY `id_aluno` (`id_aluno`);
+
+--
+-- Índices para tabela `assiste`
+--
+ALTER TABLE `assiste`
+  ADD KEY `matricula_aluno` (`matricula_aluno`),
+  ADD KEY `cod_disc` (`cod_disc`);
+
+--
+-- Índices para tabela `coordenador`
+--
+ALTER TABLE `coordenador`
+  ADD PRIMARY KEY (`codigo`),
+  ADD KEY `id_coordenador` (`id_coordenador`);
+
+--
+-- Índices para tabela `disciplina`
+--
+ALTER TABLE `disciplina`
+  ADD PRIMARY KEY (`codigo_disc`);
+
+--
+-- Índices para tabela `professor`
+--
+ALTER TABLE `professor`
+  ADD PRIMARY KEY (`cat`),
+  ADD KEY `disciplina_lecionada` (`disciplina_lecionada`),
+  ADD KEY `id_professor` (`id_professor`);
+
+--
+-- Índices para tabela `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`cpf`);
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `aluno`
+--
+ALTER TABLE `aluno`
+  ADD CONSTRAINT `aluno_ibfk_1` FOREIGN KEY (`id_aluno`) REFERENCES `usuario` (`cpf`);
+
+--
+-- Limitadores para a tabela `assiste`
+--
+ALTER TABLE `assiste`
+  ADD CONSTRAINT `assiste_ibfk_1` FOREIGN KEY (`matricula_aluno`) REFERENCES `aluno` (`matricula`),
+  ADD CONSTRAINT `assiste_ibfk_2` FOREIGN KEY (`cod_disc`) REFERENCES `disciplina` (`codigo_disc`);
+
+--
+-- Limitadores para a tabela `coordenador`
+--
+ALTER TABLE `coordenador`
+  ADD CONSTRAINT `coordenador_ibfk_1` FOREIGN KEY (`id_coordenador`) REFERENCES `usuario` (`cpf`);
+
+--
+-- Limitadores para a tabela `professor`
+--
+ALTER TABLE `professor`
+  ADD CONSTRAINT `professor_ibfk_1` FOREIGN KEY (`disciplina_lecionada`) REFERENCES `disciplina` (`codigo_disc`),
+  ADD CONSTRAINT `professor_ibfk_2` FOREIGN KEY (`id_professor`) REFERENCES `usuario` (`cpf`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

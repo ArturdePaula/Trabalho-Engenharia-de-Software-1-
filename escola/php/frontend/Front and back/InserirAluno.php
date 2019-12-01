@@ -13,6 +13,28 @@
 
  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 
+<?php
+require_once '../../classes/aluno.php';
+require_once '../../classes/aluno.php';
+$usuario = new Usuario();
+$aluno = new Aluno();
+if (isset($_POST['matricula'])) {
+  $matricula = $_POST['matricula'];
+  $aluno->setMatricula($matricula);
+  $aluno->insert();
+  var_dump($aluno->insert());
+}
+/*
+$nome = $_POST['nome'];
+$cpf = $_POST['cpf'];
+$rg = $_POST['rg'];
+$matricula = $_POST['matricula'];
+$endereco = $_POST['endereco'];
+$senha = $_POST['senha'];
+*/
+}
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -118,7 +140,7 @@
         <div class="container-fluid">
           <!-- your content here -->
 
-          <form>
+          <form action="InserirAluno.php" method="post">
             <div class="form-group">
               <label for="exampleInputEmail1">Nome</label>
               <input type="text" class="form-control" id="Nome" aria-describedby="emailHelp" placeholder="">
@@ -135,7 +157,7 @@
             
             <div class="form-group">
               <label for="exampleInputPassword1">Matricula</label>
-              <input type="text" class="form-control" id="Matricula" placeholder="">
+              <input type="text" class="form-control" id="Matricula" placeholder="" name="matricula">
             </div>
 
 
