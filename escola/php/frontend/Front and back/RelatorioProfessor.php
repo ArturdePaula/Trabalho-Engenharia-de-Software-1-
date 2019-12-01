@@ -17,7 +17,11 @@
 <html lang="en">
 
 <head>
-  <title>Professor</title>
+  <!-- CSS Files -->
+
+
+  <link href="/assets/css/material-dashboard.min.css?v=2.1.1" rel="stylesheet" />
+  <title>Diretor</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
@@ -50,7 +54,7 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
+        <li class="nav-item active  ">
             <a class="nav-link" href="AlunosProfessor.php">
               <i class="material-icons">dashboard</i>
               <p>Alunos</p>
@@ -62,7 +66,7 @@
               <p>Relatorio aluno</p>
             </a>
           </li>
-          
+
           <!-- your sidebar here -->
         </ul>
       </div>
@@ -72,7 +76,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">Ola Professor</a>
+            <a class="navbar-brand" href="#pablo">Relatorio dos Alunos</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -83,7 +87,7 @@
           <div class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav">
               <li class="nav-item">
-                
+
               </li>
               <!-- your navbar here -->
             </ul>
@@ -94,6 +98,50 @@
       <div class="content">
         <div class="container-fluid">
           <!-- your content here -->
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Turmas
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Turma 1 </a>
+              <a class="dropdown-item" href="#">Turma 2 </a>
+              
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="text-center"></th>
+                <th>Nome</th>
+                <th>Matricula</th>
+                <th>Nota P1</th>
+                <th>Nota P2</th>
+                <th>Nota Trabalho</th>
+
+
+               
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center"></td>
+
+                <td>Andrew Mike</td>
+                <td>2013</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+
+
+
+                <td class="td-actions text-right">
+
+                  
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
         </div>
       </div>
       <footer class="footer">
@@ -119,6 +167,19 @@
       </footer>
     </div>
   </div>
+  <!--   Core JS Files   -->
+  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chartist JS -->
+  <script src="assets/js/plugins/chartist.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="assets/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
 </body>
 
 </html>
