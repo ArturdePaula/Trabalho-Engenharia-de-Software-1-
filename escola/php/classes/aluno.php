@@ -10,7 +10,7 @@
 			$this->conn = $dbSet;
 		}
 
-		public setMatricula($value) {
+		public setmatricula($value) {
 			$this->matricula = $value;
 		}
 

@@ -13,11 +13,11 @@
 			$this->conn = $dbSet;
 		}
 
-		public setCpf($value) {
+		public setcpf($value) {
 			$this->cpf = $value;
 		}
 
-		public getCpf() {
+		public getcpf() {
 			return $this->cpf;
 		}
 
