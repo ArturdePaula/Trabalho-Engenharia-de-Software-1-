@@ -17,11 +17,7 @@
 <html lang="en">
 
 <head>
-  <!-- CSS Files -->
-
-
-  <link href="/assets/css/material-dashboard.min.css?v=2.1.1" rel="stylesheet" />
-  <title>Diretor</title>
+  <title>Aluno</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
@@ -49,42 +45,12 @@
           Gestão Escolar
         </a>
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Diretor 
+          Aluno
         </a>
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
-            <a class="nav-link" href="InserirAluno.php">
-              
-              <i class="material-icons">dashboard</i>
-              <p>Adicionar aluno</p>
-            </a>
-          </li>
-          <li class="nav-item active  ">
-            <a class="nav-link" href="InserirProfessor">
-              <i class="material-icons">dashboard</i>
-              <p>Adicionar professor</p>
-            </a>
-          </li>
-          <li class="nav-item active  ">
-            <a class="nav-link" href="AlunosDiretor.php">
-              <i class="material-icons">dashboard</i>
-              <p>Alunos</p>
-            </a>
-          </li>
-          <li class="nav-item active  ">
-            <a class="nav-link" href="ProfessorDiretor.php">
-              <i class="material-icons">dashboard</i>
-              <p>Professores</p>
-            </a>
-          </li>
-          <li class="nav-item active  ">
-            <a class="nav-link" href="RelatorioAlunos.php">
-              <i class="material-icons">dashboard</i>
-              <p>Relatorio aluno</p>
-            </a>
-          </li>
+         
           
           <!-- your sidebar here -->
         </ul>
@@ -95,7 +61,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">Professores</a>
+            <a class="navbar-brand" href="#pablo">Ola aluno</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -117,52 +83,45 @@
       <div class="content">
         <div class="container-fluid">
           <!-- your content here -->
+
           <table class="table">
-    <thead>
-        <tr>
-            <th class="text-center"></th>
-            <th>Nome</th>
-            <th>CAT</th>
-           
-            
-            <th class="text-right">Ações</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="text-center"></td>
-            <td>Andrew Mike</td>
-            
-            <td>2013</td>
-            
-            <td class="td-actions text-right">
-                
-                <button type="button" rel="tooltip" class="btn btn-danger">
-                    <i class="material-icons">close</i>
-                </button>
-            </td>
-        </tr>
-       
-    </tbody>
-</table>
+            <thead>
+              <tr>
+                <th class="text-center"></th>
+                <th>Nome</th>
+                <th>Matricula</th>
+                <th>Disciplina</th>
+                <th>Nota P1</th>
+                <th>Nota P2</th>
+                <th>Nota Trabalho</th>
+
+
+               
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center"></td>
+
+                <td>Andrew Mike</td>
+                <td>2013</td>
+                <td>1</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+
+
+
+               
+              </tr>
+
+            </tbody>
+          </table>
         </div>
       </div>
       
     </div>
   </div>
-  <!--   Core JS Files   -->
-<script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
-<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-<script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-<!--  Google Maps Plugin    -->
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-<!-- Chartist JS -->
-<script src="assets/js/plugins/chartist.min.js"></script>
-<!--  Notifications Plugin    -->
-<script src="assets/js/plugins/bootstrap-notify.js"></script>
-<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="assets/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
 </body>
 
 </html>
