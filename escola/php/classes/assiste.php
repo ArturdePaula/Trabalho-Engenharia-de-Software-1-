@@ -2,6 +2,7 @@
 	require_once '../database/database.php';
 	class usuario {
 		private $matricula_aluno;
+		private $codigo_disciplina;
 		private $notaP1;
 		private $notaP2
 		private $notaTrabalho;

@@ -21,7 +21,7 @@
 
 
   <link href="/assets/css/material-dashboard.min.css?v=2.1.1" rel="stylesheet" />
-  <title>Diretor</title>
+  <title>Coordenador</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
@@ -49,38 +49,26 @@
           Gestão Escolar
         </a>
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Diretor 
+          Coordenador
         </a>
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
-            <a class="nav-link" href="InserirAluno.php">
+            <a class="nav-link" href="AlunosCoordenador.php">
               
-              <i class="material-icons">dashboard</i>
-              <p>Adicionar aluno</p>
-            </a>
-          </li>
-          <li class="nav-item active  ">
-            <a class="nav-link" href="InserirProfessor">
-              <i class="material-icons">dashboard</i>
-              <p>Adicionar professor</p>
-            </a>
-          </li>
-          <li class="nav-item active  ">
-            <a class="nav-link" href="AlunosDiretor.php">
               <i class="material-icons">dashboard</i>
               <p>Alunos</p>
             </a>
           </li>
           <li class="nav-item active  ">
-            <a class="nav-link" href="ProfessorDiretor.php">
+            <a class="nav-link" href="ProfessoresCoordenador.php">
               <i class="material-icons">dashboard</i>
               <p>Professores</p>
             </a>
           </li>
           <li class="nav-item active  ">
-            <a class="nav-link" href="RelatorioAlunos.php">
+            <a class="nav-link" href="RelatorioCoordenador.php">
               <i class="material-icons">dashboard</i>
               <p>Relatorio aluno</p>
             </a>
@@ -95,7 +83,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">Professores</a>
+            <a class="navbar-brand" href="#pablo">Inicio</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -117,34 +105,51 @@
       <div class="content">
         <div class="container-fluid">
           <!-- your content here -->
+
+            <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Turmas
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Turma 1 </a>
+              <a class="dropdown-item" href="#">Turma 2 </a>
+              
+            </div>
+          </div>
           <table class="table">
-    <thead>
-        <tr>
-            <th class="text-center"></th>
-            <th>Nome</th>
-            <th>CAT</th>
-           
-            
-            <th class="text-right">Ações</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="text-center"></td>
-            <td>Andrew Mike</td>
-            
-            <td>2013</td>
-            
-            <td class="td-actions text-right">
-                
-                <button type="button" rel="tooltip" class="btn btn-danger">
-                    <i class="material-icons">close</i>
-                </button>
-            </td>
-        </tr>
-       
-    </tbody>
-</table>
+            <thead>
+              <tr>
+                <th class="text-center"></th>
+                <th>Nome</th>
+                <th>Matricula</th>
+                <th>Nota P1</th>
+                <th>Nota P2</th>
+                <th>Nota Trabalho</th>
+
+
+               
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center"></td>
+
+                <td>Andrew Mike</td>
+                <td>2013</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+
+
+
+                <td class="td-actions text-right">
+
+                  
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
         </div>
       </div>
       

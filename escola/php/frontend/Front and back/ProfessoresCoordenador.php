@@ -51,20 +51,29 @@
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
           Gestão Escolar
         </a>
+        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          Coordenador
+        </a>
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
-            <a class="nav-link" href="Tablealunos.php">
+            <a class="nav-link" href="AlunosCoordenador.php">
               
               <i class="material-icons">dashboard</i>
               <p>Alunos</p>
             </a>
           </li>
           <li class="nav-item active  ">
-            <a class="nav-link" href="Tableprofessor.php">
+            <a class="nav-link" href="ProfessoresCoordenador.php">
               <i class="material-icons">dashboard</i>
               <p>Professores</p>
+            </a>
+          </li>
+          <li class="nav-item active  ">
+            <a class="nav-link" href="RelatorioCoordenador.php">
+              <i class="material-icons">dashboard</i>
+              <p>Relatorio aluno</p>
             </a>
           </li>
           <!-- your sidebar here -->
@@ -76,7 +85,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">Alunos</a>
+            <a class="navbar-brand" href="#pablo">Professores</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -103,31 +112,25 @@
           <table class="table">
     <thead>
         <tr>
-            <th class="text-center">#</th>
-            <th>Name</th>
-            <th>Job Position</th>
-            <th>Since</th>
-            <th class="text-right">Salary</th>
-            <th class="text-right">Actions</th>
+            <th class="text-center"></th>
+            <th>Nome</th>
+            <th>CAT</th>
+            
+         
+            <th class="text-right">Ações</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="text-center">1</td>
+            <td class="text-center"></td>
             <td>Andrew Mike</td>
-            <td>Develop</td>
+           
             <td>2013</td>
-            <td class="text-right">&euro; 99,225</td>
+           
             <td class="td-actions text-right">
-                <button type="button" rel="tooltip" class="btn btn-info">
-                    <i class="material-icons">person</i>
-                </button>
-                <button type="button" rel="tooltip" class="btn btn-success">
-                    <i class="material-icons">edit</i>
-                </button>
-                <button type="button" rel="tooltip" class="btn btn-danger">
-                    <i class="material-icons">close</i>
-                </button>
+            <form action="EditarProfessor.php">
+                    <button class="btn btn-action" type="submit"><i></i>EDITAR</button>
+                  </form>
             </td>
         </tr>
        
@@ -135,27 +138,7 @@
 </table>
         </div>
       </div>
-      <footer class="footer">
-        <div class="container-fluid">
-          <nav class="float-left">
-            <ul>
-              <li>
-                <a href="https://www.creative-tim.com">
-                  Creative Tim
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="copyright float-right">
-            &copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script>, made with <i class="material-icons">favorite</i> by
-            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
-          </div>
-          <!-- your footer here -->
-        </div>
-      </footer>
+      
     </div>
   </div>
   <!--   Core JS Files   -->

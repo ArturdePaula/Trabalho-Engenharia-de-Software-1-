@@ -44,15 +44,25 @@
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
           Gestão Escolar
         </a>
+        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          Professor
+        </a>
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
-            <a class="nav-link" href="#0">
+            <a class="nav-link" href="AlunosProfessor.php">
               <i class="material-icons">dashboard</i>
               <p>Alunos</p>
             </a>
           </li>
+          <li class="nav-item active  ">
+            <a class="nav-link" href="RelatorioProfessor.php">
+              <i class="material-icons">dashboard</i>
+              <p>Relatorio aluno</p>
+            </a>
+          </li>
+          
           <!-- your sidebar here -->
         </ul>
       </div>
@@ -62,7 +72,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">Dashboard</a>
+            <a class="navbar-brand" href="#pablo">Ola Professor</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -86,27 +96,7 @@
           <!-- your content here -->
         </div>
       </div>
-      <footer class="footer">
-        <div class="container-fluid">
-          <nav class="float-left">
-            <ul>
-              <li>
-                <a href="https://www.creative-tim.com">
-                  Creative Tim
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="copyright float-right">
-            &copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script>, made with <i class="material-icons">favorite</i> by
-            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
-          </div>
-          <!-- your footer here -->
-        </div>
-      </footer>
+      
     </div>
   </div>
 </body>
