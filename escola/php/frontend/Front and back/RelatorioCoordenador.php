@@ -105,6 +105,51 @@
       <div class="content">
         <div class="container-fluid">
           <!-- your content here -->
+
+            <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Turmas
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Turma 1 </a>
+              <a class="dropdown-item" href="#">Turma 2 </a>
+              
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="text-center"></th>
+                <th>Nome</th>
+                <th>Matricula</th>
+                <th>Nota P1</th>
+                <th>Nota P2</th>
+                <th>Nota Trabalho</th>
+
+
+               
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center"></td>
+
+                <td>Andrew Mike</td>
+                <td>2013</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+
+
+
+                <td class="td-actions text-right">
+
+                  
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
         </div>
       </div>
       <footer class="footer">

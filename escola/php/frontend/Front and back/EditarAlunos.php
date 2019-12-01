@@ -56,7 +56,7 @@
         <ul class="nav">
           <li class="nav-item active  ">
             <a class="nav-link" href="AlunosCoordenador.php">
-              
+
               <i class="material-icons">dashboard</i>
               <p>Alunos</p>
             </a>
@@ -73,7 +73,7 @@
               <p>Relatorio aluno</p>
             </a>
           </li>
-          
+
           <!-- your sidebar here -->
         </ul>
       </div>
@@ -83,7 +83,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">Inicio</a>
+            <a class="navbar-brand" href="#pablo">Editar Alunos</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -94,7 +94,7 @@
           <div class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav">
               <li class="nav-item">
-                
+
               </li>
               <!-- your navbar here -->
             </ul>
@@ -105,6 +105,25 @@
       <div class="content">
         <div class="container-fluid">
           <!-- your content here -->
+
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Nome</label>
+              <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="">
+              
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Matricula</label>
+              <input type="text" class="form-control" id="matricula" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Turma</label>
+              <input type="text" class="form-control" id="Turma" placeholder="">
+            </div>
+            
+
+            <button type="submit" class="btn btn-primary">Atualizar</button>
+          </form>
         </div>
       </div>
       <footer class="footer">
@@ -131,18 +150,18 @@
     </div>
   </div>
   <!--   Core JS Files   -->
-<script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
-<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-<script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-<!--  Google Maps Plugin    -->
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-<!-- Chartist JS -->
-<script src="assets/js/plugins/chartist.min.js"></script>
-<!--  Notifications Plugin    -->
-<script src="assets/js/plugins/bootstrap-notify.js"></script>
-<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="assets/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
+  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chartist JS -->
+  <script src="assets/js/plugins/chartist.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="assets/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
 </body>
 
 </html>
