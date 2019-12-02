@@ -14,6 +14,7 @@
  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 
 <?php
+/*
 require_once '../../classes/aluno.php';
 require_once '../../classes/aluno.php';
 $usuario = new Usuario();
@@ -24,6 +25,7 @@ if (isset($_POST['matricula'])) {
   $aluno->insert();
   var_dump($aluno->insert());
 }
+
 /*
 $nome = $_POST['nome'];
 $cpf = $_POST['cpf'];
@@ -32,7 +34,7 @@ $matricula = $_POST['matricula'];
 $endereco = $_POST['endereco'];
 $senha = $_POST['senha'];
 */
-}
+
 ?>
 
 <!doctype html>
